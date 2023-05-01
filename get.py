@@ -7,9 +7,10 @@ import os
 headers = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3'}
 
-# 获取程序所在的目录路径
+# 判断存储文件夹是否存在目录路径
 directory = './project'
-
+if directory in os.listdir():
+    print('project已存在，继续执行')
 # 发送 GET 请求获取网页内容
 url = 'https://redbu1l.github.io/'
 response = requests.get(url, headers=headers)
