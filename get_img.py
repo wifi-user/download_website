@@ -43,8 +43,8 @@ for filename in os.listdir(directory):
                 result = re.sub(pattern, '',img_url)
 
                 # 创建保存路径
-                print(img_url)
-                print(result)
+                print('图片url：',img_url)
+                print('存储path：'，result)
                 img_path = os.path.join(directory, result)  # 去除"http开头.com结尾"
                 img_dir = os.path.dirname(img_path)
                 os.makedirs(img_dir, exist_ok=True)
