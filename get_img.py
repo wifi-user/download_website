@@ -54,6 +54,6 @@ for filename in os.listdir(directory):
                 response = requests.get(img_url).content
                 print(response)
                 with open(img_path, 'wb') as f:
-                    shutil.copyfileobj(response.raw, f)
+                    f.write(response)
                     print(img_path,'完')
                 del response
