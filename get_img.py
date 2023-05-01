@@ -9,8 +9,8 @@ import urllib.parse
 headers = { 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3'}
 
 # 获取程序所在的目录路径
-directory = __file__
-print(current_file_path)
+directory = os.getcwd()
+print(directory)
 # 遍历所有HTML文件
 for filename in os.listdir(directory):
     if filename.endswith('.html'):
