@@ -11,6 +11,8 @@ headers = {
 directory = './project'
 if directory in os.listdir():
     print('project已存在，继续执行')
+else:
+    os.mkdir(directory)
 # 发送 GET 请求获取网页内容
 url = 'https://redbu1l.github.io/'
 response = requests.get(url, headers=headers)
