@@ -44,7 +44,7 @@ for filename in os.listdir(directory):
 
                 # 创建保存路径
                 print('图片url：',img_url)
-                print('存储path：'，result)
+                print('存储path：',result)
                 img_path = os.path.join(directory, result)  # 去除"http开头.com结尾"
                 img_dir = os.path.dirname(img_path)
                 os.makedirs(img_dir, exist_ok=True)
