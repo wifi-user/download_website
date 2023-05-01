@@ -3,7 +3,7 @@ import requests
 from bs4 import BeautifulSoup
 
 # 获取程序所在的目录路径
-directory = os.path.dirname(os.path.abspath(__file__))
+directory = './project'
 # 设置下载的 CSS 文件存储路径
 css_dir = os.path.join(directory, "css")
 
