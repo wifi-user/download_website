@@ -50,7 +50,7 @@ for filename in os.listdir(directory):
                 os.makedirs(img_dir, exist_ok=True)
 
                 # 下载图片
-                response = requests.get(img_url,headers=headers)
+                response = requests.get(img_url)
                 print(response)
                 with open(img_path, 'wb') as f:
                     shutil.copyfileobj(response.raw, f)
