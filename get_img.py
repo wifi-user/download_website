@@ -51,6 +51,7 @@ for filename in os.listdir(directory):
 
                 # 下载图片
                 response = requests.get(img_url,headers=headers)
+                print(response)
                 with open(img_path, 'wb') as f:
                     shutil.copyfileobj(response.raw, f)
                     print(img_path,'完')
