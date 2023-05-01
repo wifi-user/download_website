@@ -40,12 +40,12 @@ for filename in os.listdir(directory):
                 # 匹配以http开头、以.com结尾的URL链接
                 pattern = r'http\S+com/'
                 # 用空字符串替换匹配到的URL链接
-                result = re.sub(pattern, '',img_url)
+                img_path = re.sub(pattern, '',img_url)
 
                 # 创建保存路径
                 print('图片url：',img_url)
-                print('存储path：',result)
-                img_path = os.path.join(directory, img_url)  # 去除"http开头.com结尾"
+                print('存储path：',img_path)
+                #img_path = os.path.join(directory, img_url)  # 去除"http开头.com结尾"
                 img_dir = os.path.dirname(img_path)
                 os.makedirs(img_dir, exist_ok=True)
 
