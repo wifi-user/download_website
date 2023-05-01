@@ -8,7 +8,7 @@ headers = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3'}
 
 # 获取程序所在的目录路径
-directory = os.getcwd()
+directory = './project'
 
 # 发送 GET 请求获取网页内容
 url = 'https://redbu1l.github.io/'
