@@ -32,13 +32,14 @@ for filename in os.listdir(directory):
                 continue
             if img_url is not None:
                 # url编码
-                img_url = urllib.parse.unquote(img_url)
+                #img_url = urllib.parse.unquote(img_url)
                 # 匹配以http开头、以.com结尾的URL链接
-                pattern = r'http\S+com/'
+                #pattern = r'http\S+com/'
                 # 用空字符串替换匹配到的URL链接
-                result = re.sub(pattern, '',img_url)
+                #result = re.sub(pattern, '',img_url)
 
                 # 创建保存路径
+                result = img_url
                 print(result)
                 img_path = os.path.join(directory, result)  # 去除"http开头.com结尾"
                 img_dir = os.path.dirname(img_path)
